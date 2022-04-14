@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./asset/css/style.css">
-    <link rel="stylesheet" href="./asset/icon/fontawesome-free-6.0.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../asset/css/trangchu.css">
+    <link rel="stylesheet" href="../asset/icon/fontawesome-free-6.0.0-web/css/all.min.css">
     <title>ClickClick | Điện Thoại | HCM</title>
     <script src = "https://code.iconify.design/2/2.1.2/iconify.min.js"> </script>
 </head>
@@ -15,12 +15,12 @@
         <!-------------------------HEADER----------------------------- -->
         <div class="header">
             <div class="header___content">
-                <div class="header__logo">Click<span>Click</span></div>
+                <a href="./trangchu.html"><div class="header__logo">Click<span>Click</span></div></a>
     
                 <div class="header__nav">
                     <ul class="nav__list">
                        <li><a href="#">HOME</a></li>
-                       <li><a href="#">SHOP</a>
+                       <li><a href="#store">SHOP</a>
                             <ul class="subnav">
                                 <li><a href="#"></a></li>
                                 <li><a href="#"></a></li>
@@ -28,17 +28,20 @@
                             </ul>
                         </li>
                        <li><a href="#">NEW</a></li>
-                       <li><a href="#">CONTAT</a></li>
+                       <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </div>
-    
+
                 <div class="header__search">
+                    
                     <input class="search" type="text" placeholder="What do you want ...">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <button class="account">MY ACCOUNT</button>
-                    <div class="cart"></div>
+                    <i class="fa-solid fa-magnifying-glass sear"></i>
+                    <button  class="account"><a href="./dangnhap.html"  class="account"">MY ACCOUNT</a></button>
                     <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
                 </div>
+    
+                <!-- <div class="header__search">
+                </div> -->
             </div>
         </div>
 
@@ -82,13 +85,19 @@
                 <div class="content__ads--between">
                     <div class="content__ads--slide">
                         <span class="content__title">QUẢNG CÁO ĐEEEEEEE</span>
-                        <img class="ads--mySlides" src="./asset/img/img1.jpg" style="width:100% ">
-                        <img class="ads--mySlides" src="./asset/img/img2.jpg" style="width:100% ">
-                        <img class="ads--mySlides" src="./asset/img/img3.jpg" style="width:100% ">
-                        <img class="ads--mySlides" src="./asset/img/img4.jpg" style="width:100% ">
+                        <img class="ads--mySlides" src="../asset/img/img1.jpg" style="width:100% ">
+                        <img class="ads--mySlides" src="../asset/img/img2.jpg" style="width:100% ">
+                        <img class="ads--mySlides" src="../asset/img/img3.jpg" style="width:100% ">
+                        <img class="ads--mySlides" src="../asset/img/img4.jpg" style="width:100% ">
                       
-                        <button class="slide__btn btn-left" onclick="plusDivs(-1)">&#10094;</button>
-                        <button class="slide__btn btn-right" onclick="plusDivs(1)">&#10095;</button>
+                        <div class="btn_dot" style="text-align:center">
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                        </div>
                     </div>
                 </div>
                 <div class="content__ads--right">
@@ -101,7 +110,7 @@
         </div>
 
         <!-------------------------Content-Store----------------------------- -->
-        <div class="content__store">
+        <div id="store" class="content__store">
             <div class="store__price">
                 <div class="store__price-selective">
                     <a href="#">
@@ -115,7 +124,7 @@
                     <a href="#"><span>Từ 7 - 10 triệu</span></a>
                     <div class="selective-price selective">
                         <select>
-                            <option>Giá khác</option>
+                            <option selected>Giá khác</option>
                             <option>Dưới 3 triệu</option>
                             <option>Từ 3 - 7 triệu</option>
                             <option>Từ 7 - 10 triệu</option>
@@ -126,7 +135,7 @@
 
                     <div class="selective-memory selective">
                         <select>
-                            <option>Bộ nhớ</option>
+                            <option selected>Bộ nhớ</option>
                             <option>8 GB</option>
                             <option>16 GB</option>
                             <option>32 GB</option>
@@ -139,7 +148,7 @@
 
                     <div class="selective-arrange selective">
                         <select>
-                            <option>Sắp xếp</option>
+                            <option selected>Sắp xếp</option>
                             <option>Sản phẩm xem nhiều nhất</option>
                             <option>Giá thấp đến cao</option>
                             <option>Giá cao đến thấp</option>
@@ -153,10 +162,10 @@
             
             
             
-                        <div class="content__product">
+                        <div  class="content__product">
                             <div class="product__box">
                                 <div class="product__box-img">
-                                    <img src="./asset/img/ip1.jpg" alt="">
+                                    <img  src="../asset/img/ip1.jpg" alt="">
                                 </div>
                                 <a href="#" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
                                 <div class="product__box-price">
@@ -172,7 +181,23 @@
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
-                                    <img src="./asset/img/ip1.jpg" alt="">
+                                    <img src="../asset/img/ip2.jpg" alt="">
+                                </div>
+                                <a href="#" class="product__box-title">iPhone SE 3 2022 Chính hãng VN/A</a>
+                                <div class="product__box-price">
+                                    <div class="box-price__memory">256
+                                    </div>
+                                    <div class="box-price__price">   17,990,000Đ</div>
+            
+                                </div>
+                                <div class="product__box-description">
+                                    Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
+                                    
+                                </div>
+                            </div>
+                            <div class="product__box">
+                                <div class="product__box-img">
+                                    <img src="../asset/img/ip3.jpg" alt="">
                                 </div>
                                 <a href="#" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
                                 <div class="product__box-price">
@@ -188,7 +213,39 @@
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
-                                    <img src="./asset/img/ip1.jpg" alt="">
+                                    <img src="../asset/img/ip4.jpg" alt="">
+                                </div>
+                                <a href="#" class="product__box-title">Apple iPhone 11 64GB Chính hãng VN/A</a>
+                                <div class="product__box-price">
+                                    <div class="box-price__memory">64
+                                    </div>
+                                    <div class="box-price__price">   11,590,000Đ</div>
+            
+                                </div>
+                                <div class="product__box-description">
+                                    Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
+                                    
+                                </div>
+                            </div>
+                            <div class="product__box">
+                                <div class="product__box-img">
+                                    <img src="../asset/img/ss1.png" alt="">
+                                </div>
+                                <a href="#" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
+                                <div class="product__box-price">
+                                    <div class="box-price__memory">128
+                                    </div>
+                                    <div class="box-price__price">   29,490,000Đ</div>
+            
+                                </div>
+                                <div class="product__box-description">
+                                    Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
+                                    
+                                </div>
+                            </div>
+                            <div href="https://clickbuy.com.vn/apple-iphone-11-64gb-chinh-hang-vn-a/" class="product__box">
+                                <div class="product__box-img">
+                                    <img src="../asset/img/ss2.png" alt="">
                                 </div>
                                 <a href="#" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
                                 <div class="product__box-price">
@@ -204,7 +261,7 @@
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
-                                    <img src="./asset/img/ip1.jpg" alt="">
+                                    <img src="../asset/img/mi1.jpg" alt="">
                                 </div>
                                 <a href="#" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
                                 <div class="product__box-price">
@@ -220,7 +277,7 @@
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
-                                    <img src="./asset/img/ip1.jpg" alt="">
+                                    <img src="../asset/img/mi2.jpg" alt="">
                                 </div>
                                 <a href="#" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
                                 <div class="product__box-price">
@@ -236,7 +293,7 @@
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
-                                    <img src="./asset/img/ip1.jpg" alt="">
+                                    <img src="../asset/img/gg1.png" alt="">
                                 </div>
                                 <a href="#" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
                                 <div class="product__box-price">
@@ -252,7 +309,7 @@
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
-                                    <img src="./asset/img/ip1.jpg" alt="">
+                                    <img src="../asset/img/gg2.jpg" alt="">
                                 </div>
                                 <a href="#" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
                                 <div class="product__box-price">
@@ -268,7 +325,7 @@
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
-                                    <img src="./asset/img/ip1.jpg" alt="">
+                                    <img src="../asset/img/gg3.png" alt="">
                                 </div>
                                 <a href="#" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
                                 <div class="product__box-price">
@@ -284,7 +341,7 @@
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
-                                    <img src="./asset/img/ip1.jpg" alt="">
+                                    <img src="../asset/img/ip5.jpg" alt="">
                                 </div>
                                 <a href="#" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
                                 <div class="product__box-price">
@@ -300,7 +357,7 @@
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
-                                    <img src="./asset/img/ip1.jpg" alt="">
+                                    <img src="../asset/img/ip6.jpg" alt="">
                                 </div>
                                 <a href="#" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
                                 <div class="product__box-price">
@@ -316,7 +373,7 @@
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
-                                    <img src="./asset/img/ip1.jpg" alt="">
+                                    <img src="../asset/img/rm1.png" alt="">
                                 </div>
                                 <a href="#" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
                                 <div class="product__box-price">
@@ -332,57 +389,9 @@
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
-                                    <img src="./asset/img/ip1.jpg" alt="">
+                                    <img src="../asset/img/op2.jpg" alt="">
                                 </div>
-                                <a href="#" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
-                                <div class="product__box-price">
-                                    <div class="box-price__memory">128
-                                    </div>
-                                    <div class="box-price__price">   29,490,000Đ</div>
-            
-                                </div>
-                                <div class="product__box-description">
-                                    Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
-                                    
-                                </div>
-                            </div>
-                            <div class="product__box">
-                                <div class="product__box-img">
-                                    <img src="./asset/img/ip1.jpg" alt="">
-                                </div>
-                                <a href="#" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
-                                <div class="product__box-price">
-                                    <div class="box-price__memory">128
-                                    </div>
-                                    <div class="box-price__price">   29,490,000Đ</div>
-            
-                                </div>
-                                <div class="product__box-description">
-                                    Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
-                                    
-                                </div>
-                            </div>
-                            <div class="product__box">
-                                <div class="product__box-img">
-                                    <img src="./asset/img/ip1.jpg" alt="">
-                                </div>
-                                <a href="#" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
-                                <div class="product__box-price">
-                                    <div class="box-price__memory">128
-                                    </div>
-                                    <div class="box-price__price">   29,490,000Đ</div>
-            
-                                </div>
-                                <div class="product__box-description">
-                                    Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
-                                    
-                                </div>
-                            </div>
-                            <div class="product__box">
-                                <div class="product__box-img">
-                                    <img src="./asset/img/ip1.jpg" alt="">
-                                </div>
-                                <div class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</div>
+                                <a href="../html/sanpham.html" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
                                 <div class="product__box-price">
                                     <div class="box-price__memory">128
                                     </div>
@@ -397,9 +406,9 @@
             
                             <div class="product__box">
                                 <div class="product__box-img">
-                                    <img src="./asset/img/ip1.jpg" alt="">
+                                    <img src="../asset/img/ôp1.jpg" alt="">
                                 </div>
-                                <div class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</div>
+                                <a href="../html/sanpham.html" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
                                 <div class="product__box-price">
                                     <div class="box-price__memory">128
                                     </div>
@@ -413,9 +422,9 @@
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
-                                    <img src="./asset/img/ip1.jpg" alt="">
+                                    <img src="../asset/img/ss4.jpg" alt="">
                                 </div>
-                                <div class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</div>
+                                <a href="../html/sanpham.html" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
                                 <div class="product__box-price">
                                     <div class="box-price__memory">128
                                     </div>
@@ -429,9 +438,9 @@
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
-                                    <img src="./asset/img/ip1.jpg" alt="">
+                                    <img src="../asset/img/ss6.jpg" alt="">
                                 </div>
-                                <div class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</div>
+                                <a href="../html/sanpham.html" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
                                 <div class="product__box-price">
                                     <div class="box-price__memory">128
                                     </div>
@@ -445,9 +454,9 @@
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
-                                    <img src="./asset/img/ip1.jpg" alt="">
+                                    <img src="../asset/img/s22-ultra-300x300.webp" alt="">
                                 </div>
-                                <div class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</div>
+                                <a href="../html/sanpham.html" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
                                 <div class="product__box-price">
                                     <div class="box-price__memory">128
                                     </div>
@@ -461,9 +470,9 @@
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
-                                    <img src="./asset/img/ip1.jpg" alt="">
+                                    <img  src="../asset/img/ss5.jpg" alt="">
                                 </div>
-                                <div class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</div>
+                                <a href="../html/sanpham.html" class="product__box-title">Apple iPhone 13 Pro Max 128GB Chính hãng VN/A</a>
                                 <div class="product__box-price">
                                     <div class="box-price__memory">128
                                     </div>
@@ -475,10 +484,6 @@
                                     
                                 </div>
                             </div>
-                            
-                            
-                            
-                            
                         </div>
 
 
@@ -491,7 +496,7 @@
 
 
         <!-------------------------FOOTER----------------------------- -->
-        <div class="footer">
+        <div id="contact" class="footer">
             <div class="contact">
                 <div class="footer__info">
                     <h2 class="footer__titile">THÔNG TIN HỖ TRỢ</h2>
@@ -560,22 +565,43 @@
     </div>
 </body>
 <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
+    // var slideIndex = 1;
+    // showDivs(slideIndex);
     
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
+    // function plusDivs(n) {
+    //   showDivs(slideIndex += n);
+    // }
     
-    function showDivs(n) {
+    // function showDivs(n) {
+    //   var i;
+    //   var x = document.getElementsByClassName("ads--mySlides");
+    //   if (n > x.length) {slideIndex = 1}
+    //   if (n < 1) {slideIndex = x.length}
+    //   for (i = 0; i < x.length; i++) {
+    //     x[i].style.display = "none";  
+    //   }
+    //   x[slideIndex-1].style.display = "block";  
+    // }
+
+
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
       var i;
-      var x = document.getElementsByClassName("ads--mySlides");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
+      var slides = document.getElementsByClassName("ads--mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
       }
-      x[slideIndex-1].style.display = "block";  
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
     }
     </script>
 </html>
