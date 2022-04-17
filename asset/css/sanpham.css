@@ -154,9 +154,10 @@ a{
 
 .content{
     width: 1200px;
-    height: 100vh;
     margin: auto;
     margin-top: 90px;
+  background-color: var(--color--one);
+
 }
 
 .content__box{
@@ -197,16 +198,17 @@ a{
 
 
 .box{
-    width: 80%;
-    margin: auto;
-    margin-top: 20px;
+    width: 89%;
+    margin-left:10px;
+    margin-top: 30px;
     border: 1px solid var(--color--three);
     padding: 10px 5px;
     border-radius: 4px;
     background-image: linear-gradient( #345b63,#d4ecdd);
+    
 }
 
-h4{
+.box > h4{
     text-align: center;
     border-bottom: 1px solid var(--color--three);
     font-weight: bold;
@@ -292,7 +294,6 @@ h4{
 
 .footer {
     
-    margin-top: 100px;
     padding-top: 40px;
     width: 100%;
     height: 440px;
@@ -375,7 +376,6 @@ h4{
   }
   
   .contact__icon {
-    margin-top: 40px;
     background-color: var(--color--three);
     height: 100px;
     display: flex;
@@ -397,3 +397,58 @@ h4{
   .icon:hover {
     opacity: 0.8;
   }
+
+  .btn-top{
+    padding: 5px 10px;
+    width: 95%;
+    margin-top: 20px;
+  }
+  .discount .box {
+    margin-left: 0px;
+    width: 95%;
+  }
+
+  .btn-bottom{
+
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .btn-bottom button{
+    width: 49.5%;
+
+    background-color: white;
+    color: var(--color--four);
+    border: none;
+    border-radius:4px;
+  }
+  .btn-bottom button:first-child{
+    margin-right: 10px;
+  }
+
+  .btn-top{
+    background-color: var(--color--two);
+    color: var(--color--one);
+  }
+
+  .btn-bottom button:last-child{
+    padding-right: 10px;
+  }
+
+
+  .btn:hover{
+    opacity: 0.9;
+  }
+
+iframe{
+  float: left;
+}
+
+.bt{
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+.ex_lborder{
+}

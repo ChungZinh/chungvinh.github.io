@@ -139,6 +139,8 @@ cart.addEventListener("click", function(event) {
 
 
 // đăng ký
+
+
 function checkRegister() {
     var form = document.querySelector('#frmdangky');
     var data = Object.fromEntries(new FormData(form).entries());
@@ -162,21 +164,28 @@ function checkRegister() {
         return false;
     }
     lbUserName.innerText = "";
+    
     if (!regPassword.test(data.password)) {
         lbMatKhau.innerText = "Mật khẩu phải có 8 ký tự trở lên và có ít nhất 1 số";
         return false;
     }
     lbMatKhau.innerText = "";
+    
+
     if (data.password !== data.kh_nhaplaimatkhau) {
         lbNhapLaiMatKhau.innerText = "Mật khẩu chưa khớp";
         return false;
     }
     lbNhapLaiMatKhau.innerText = "";
+    
+
     if (!regName.test(data.kh_ten)) {
         lbTen.innerText = "Chữ cái đầu tiên phải bắt đầu bằng chữ in hoa và phải có họ và tên";
         return false;
     }
     lbTen.innerText = "";
+    
+
     if (data.kh_diachi.trim().length == 0) {
         lbDiaChi.innerText = "Địa chỉ không được bỏ trống";
         return false;
@@ -187,6 +196,8 @@ function checkRegister() {
         return false;
     }
     lbDt.innerText = "";
+    
+
     if (!regEmail.test(data.kh_email)) {
         lbEmail.innerText = "vui lòng điền đúng định dạng email";
         return false;
@@ -199,6 +210,30 @@ function checkRegister() {
     lbNgaySinh.innerText = "";
     return true;
 }
+
+//save
+$("#Save").click(function()
+    {
+
+        if(checkRegister() == true)
+        {
+            alert('Đã đăng ký thành công!!!');
+            row = "<tr>";
+            row += "<th>" + (i++) + "</th>";
+            row += "<th>" + $("#name").val() + "</th>";
+            row += "<th>" + $("#pass").val() + "</th>";
+            row += "<th>" + $("#ten").val() + "</th>";
+            row += "<th>" + $("#gt").val() + "</th>";
+            row += "<th>" + $("#diachi").val() + "</th>";
+            row += "<th>" + $("#dienthoai").val() + "</th>";
+            row += "<th>" + $("#email").val() + "</th>";
+            row += "<th>" + $("#date").val() + "</th>";
+            $("#danhSach").append(row);
+            $("#myModal").modal("hide");
+        }
+    }
+    )
+    
 
 
 // get thông tin

@@ -169,3 +169,25 @@ body{
 .footer p{
     text-align: center;
 }
+
+.detailacc{
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+.detailacc a{
+  padding: 20px 30px;
+  background-image: linear-gradient(50deg,#112031,#d4ecdd,#112031);
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color--four);
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+.detailacc a:hover{
+  background-image: linear-gradient(180deg,#112031,#d4ecdd,#112031);
+
+}
