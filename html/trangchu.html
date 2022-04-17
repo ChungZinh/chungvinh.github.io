@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="../asset/css/trangchu.css">
     <link rel="stylesheet" href="../asset/icon/fontawesome-free-6.0.0-web/css/all.min.css">
     <title>ClickClick | Điện Thoại | HCM</title>
+    <script src="../asset/js/bootstrap.min.js"></script>
+    <script src="../asset/js/jquery-3.6.0.min.js"></script> 
     <script src = "https://code.iconify.design/2/2.1.2/iconify.min.js"> </script>
 </head>
 <body>
@@ -15,29 +18,24 @@
         <!-------------------------HEADER----------------------------- -->
         <div class="header">
             <div class="header___content">
-                <a href="./trangchu.html"><div class="header__logo">Click<span>Click</span></div></a>
+                <a style="text-decoration: none;" href="./trangchu.html"><div class="header__logo">Click<span>Click</span></div></a>
     
                 <div class="header__nav">
                     <ul class="nav__list">
-                       <li><a href="#">HOME</a></li>
-                       <li><a href="#store">SHOP</a>
-                            <ul class="subnav">
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                            </ul>
+                       <li><a href="#" >HOME</a></li>
+                       <li><a href="#store" id="btnProduct">SHOP</a>
                         </li>
-                       <li><a href="#">NEW</a></li>
-                       <li><a href="#contact">CONTACT</a></li>
+                       <li><a href="../html/thongtin.html">ABOUT US</a></li>
+                       <li><a href="#contact">SITEMAP</a></li>
                     </ul>
                 </div>
 
                 <div class="header__search">
                     
-                    <input class="search" type="text" placeholder="What do you want ...">
-                    <i class="fa-solid fa-magnifying-glass sear"></i>
+                    <input class="search" type="text" id="search" placeholder="Bạn muốn tìm gì? ...">
+                    <a href="" class="search__btn"><i class="fa-solid fa-magnifying-glass sear"></i></a>
                     <button  class="account"><a href="./dangnhap.html"  class="account"">MY ACCOUNT</a></button>
-                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                    <a href="../html/giohang.html"><i class="fa-solid fa-cart-shopping cart cart-link"></i></a>
                 </div>
     
                 <!-- <div class="header__search">
@@ -178,12 +176,23 @@
                                     Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
                                     
                                 </div>
+
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
                                     <img src="../asset/img/ip2.jpg" alt="">
                                 </div>
-                                <a href="#" class="product__box-title">iPhone SE 3 2022 Chính hãng VN/A</a>
+                                <a href="#" class="product__box-title"> Apple iPhone SE 3 2022 Chính hãng VN/A</a>
                                 <div class="product__box-price">
                                     <div class="box-price__memory">256
                                     </div>
@@ -194,6 +203,12 @@
                                     Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
                                     
                                 </div>
+
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
@@ -210,6 +225,12 @@
                                     Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
                                     
                                 </div>
+
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
@@ -226,6 +247,12 @@
                                     Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
                                     
                                 </div>
+
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
@@ -242,6 +269,12 @@
                                     Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
                                     
                                 </div>
+
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
                             </div>
                             <div href="https://clickbuy.com.vn/apple-iphone-11-64gb-chinh-hang-vn-a/" class="product__box">
                                 <div class="product__box-img">
@@ -258,6 +291,12 @@
                                     Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
                                     
                                 </div>
+
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
@@ -274,6 +313,12 @@
                                     Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
                                     
                                 </div>
+
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
@@ -290,6 +335,12 @@
                                     Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
                                     
                                 </div>
+
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
@@ -306,6 +357,12 @@
                                     Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
                                     
                                 </div>
+
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
@@ -322,6 +379,12 @@
                                     Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
                                     
                                 </div>
+
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
@@ -338,6 +401,12 @@
                                     Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
                                     
                                 </div>
+
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
@@ -354,6 +423,12 @@
                                     Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
                                     
                                 </div>
+
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
@@ -370,6 +445,12 @@
                                     Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
                                     
                                 </div>
+
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
@@ -386,6 +467,12 @@
                                     Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
                                     
                                 </div>
+
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
@@ -402,6 +489,12 @@
                                     Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
                                     
                                 </div>
+
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
                             </div>
             
                             <div class="product__box">
@@ -419,6 +512,12 @@
                                     Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
                                     
                                 </div>
+
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
@@ -435,6 +534,12 @@
                                     Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
                                     
                                 </div>
+
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
@@ -451,6 +556,12 @@
                                     Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
                                     
                                 </div>
+
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
@@ -467,6 +578,12 @@
                                     Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
                                     
                                 </div>
+
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
                             </div>
                             <div class="product__box">
                                 <div class="product__box-img">
@@ -483,6 +600,12 @@
                                     Tặng Phiếu mua hàng 500.000đ ( áp dụng khi mua Ốp lưng chính hãng)
                                     
                                 </div>
+
+                                <a class="product__box-ct" href="../html/sanpham.html">
+                                    <div >
+                                        Xem chi tiết
+                                    </div>
+                                </a>
                             </div>
                         </div>
 
@@ -532,21 +655,22 @@
                     </ul>
                 </div>
     
-                <div class="footer__send">
+                <form method="post" action="" class="footer__send">
+
                     <h2 class="footer__titile">PHẢN HỒI</h2>
     
-                    <div class="send-mail">
-                        <label class="lable" for="Mail">Mail</label>
-                        <input class="input" type="text" placeholder="Your email address">
+                    
+                    <div class="form-group send-mail">
+                        <label for="email">Email của bạn</label>
+                        <input type="email" class="form-control" id="email" name="email"
+                            placeholder="Email của bạn">
                     </div>
-    
-                    <div class="send-mes">
-                        <label class="lable" for="Mail">Messager</label>
-                        <input class="input" type="text" placeholder="Messager">
+                    <div class="send-mes form-group">
+                        <label for="message">Lời nhắn của bạn</label>
+                        <input type="text" class="form-control" id="title" name="title" placeholder="Lời nhắn của bạn">
                     </div>
-
-                    <button>SEND</button>
-                </div>
+                    <button class="btn">SEND</button>
+                </form>
             </div>
 
 

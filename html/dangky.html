@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../asset/css/dangky.css">
+    <link rel="stylesheet" href="../asset/icon/fontawesome-free-6.0.0-web/css/all.min.css">
+    <title>ClickClick | Điện Thoại | HCM</title>
+    <script src = "https://code.iconify.design/2/2.1.2/iconify.min.js"> </script>
+    <script src="../asset/js/bootstrap.min.js"></script>
+    <script src="../asset/js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-------------------------HEADER----------------------------- -->
+        <div class="header">
+            <div class="header___content">
+                <a style="text-decoration: none;" href="./trangchu.html"><div class="header__logo">Click<span>Click</span></div></a>
+
+    
+                <div class="header__search">
+                    <input class="search" type="text" placeholder="What do you want ...">
+                    <i class="fa-solid fa-magnifying-glass sear"></i>
+                </div>
+                <a href="../html/giohang.html"><i class="fa-solid fa-cart-shopping cart cart-link"></i></a>
+            </div>
+        </div>
+
+
+        <!-- CONTENT -->
+        <div class="content">
+            <!-- dangky -->
+            <div class="background__login">
+                <form name="frmdangky" id="frmdangky" method="post" action="#">
+                    <div class="container mt-4">
+                        <div class="row justify-content-center">
+                            <div class="col">
+                                <div class="card mx-4">
+                                    <div class="card-body p-4 text-center">
+                                        <h1>ĐĂNG KÝ</h1>
+                                        <p class="text-muted">Tạo tài khoản</p>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text h-100 d-block">
+                                                    <i class="fa fa-user"></i>
+                                                </span>
+                                            </div>
+                                            <input onblur="checkRegister()" class="form-control" type="text" placeholder="Tên tài khoản"
+                                                name="username">
+                                            <span class="text-danger ms-2">*</span>
+                                        </div>
+                                        <label id="lbTenDangNhap" class="d-block ps-4 text-danger fst-italic text-start" style="height: 20px;" for=""></label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text h-100 d-block">
+                                                    <i class="fa fa-lock"></i>
+                                                </span>
+                                            </div>
+                                            <input onblur="checkRegister()" class="form-control" type="password" placeholder="Mật khẩu"
+                                                name="password">
+                                            <span class="text-danger ms-2">*</span>
+                                        </div>
+                                        <label id="lbMatKhau" class="d-block ps-4 text-danger fst-italic text-start" style="height: 20px;" for=""></label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text h-100 d-block">
+                                                    <i class="fa fa-lock"></i>
+                                                </span>
+                                            </div>
+                                            <input onblur="checkRegister()" class="form-control" type="password" placeholder="Nhập lại mật khẩu"
+                                                name="kh_nhaplaimatkhau">
+                                            <span class="text-danger ms-2">*</span>
+                                        </div>
+                                        <label id="lbNhapLaiMatKhau" class="d-block ps-4 text-danger fst-italic text-start" style="height: 20px;" for=""></label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text h-100 d-block">
+                                                    <i class="fa fa-user"></i>
+                                                </span>
+                                            </div>
+                                            <input onblur="checkRegister()" class="form-control" type="text" placeholder="Họ tên" name="kh_ten">
+                                            <span class="text-danger ms-2">*</span>
+                                        </div>
+                                        <label id="lbTen" class="d-block ps-4 text-danger fst-italic text-start" style="height: 20px;" for=""></label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text h-100 d-block">
+                                                    <i class="fa fa-user"></i>
+                                                </span>
+                                            </div>
+                                            <select onchange="checkRegister()" name="kh_gioitinh" class="form-control">
+                                                <option value="0">Nam</option>
+                                                <option value="1">Nữ</option>
+                                            </select>
+                                            <span class="text-danger ms-2">*</span>
+                                        </div>
+                                        <label id="lbGioiTinh" class="d-block ps-4 text-danger fst-italic text-start" style="height: 20px;" for=""></label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text h-100 d-block">
+                                                    <i class="fa fa-user"></i>
+                                                </span>
+                                            </div>
+                                            <input onblur="checkRegister()" class="form-control" type="text" placeholder="Địa chỉ" name="kh_diachi">
+                                            <span class="text-danger ms-2">*</span>
+                                        </div>
+                                        <label id="lbDiaChi" class="d-block ps-4 text-danger fst-italic text-start" style="height: 20px;" for=""></label>
+
+                                        <div class="input-group ">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text h-100 d-block">
+                                                    <i class="fa fa-user"></i>
+                                                </span>
+                                            </div>
+                                            <input onblur="checkRegister()" class="form-control" type="text" placeholder="Điện thoại"
+                                                name="kh_dienthoai">
+                                            <span class="text-danger ms-2">*</span>
+                                        </div>
+                                        <label id="lbDt" class="d-block ps-4 text-danger fst-italic text-start" style="height: 20px;" for=""></label>
+
+                                        <div class="input-group ">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text h-100 d-block">
+                                                    <i class="fa fa-user"></i>
+                                                </span>
+                                            </div>
+                                            <input onblur="checkRegister()" class="form-control" type="email" placeholder="Email" name="kh_email">
+                                            <span class="text-danger ms-2">*</span>
+                                        </div>
+                                        <label id="lbEmail" class="d-block ps-4 text-danger fst-italic text-start" style="height: 20px;" for=""></label>
+
+                                        <div class="input-group ">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text h-100 d-block">
+                                                    <i class="fa fa-user"></i>
+                                                </span>
+                                            </div>
+                                            <input onblur="checkRegister()" value="1" class="form-control" type="number" min="1" placeholder="Ngày sinh"
+                                                name="kh_ngaysinh">
+                                            <input onblur="checkRegister()" value="1" class="form-control" type="number" min="1" max="12" placeholder="Tháng sinh"
+                                                name="kh_thangsinh">
+                                            <input onblur="checkRegister()" value="1999" class="form-control" type="number" min="1911"placeholder="Năm sinh"
+                                                name="kh_namsinh">
+                                            <span class="text-danger ms-2">*</span>
+                                        </div>
+                                        <label id="lbNgaySinh" class="d-block ps-4 text-danger fst-italic text-start" style="height: 20px;" for=""></label>                                       
+                                        <button class="btn btn-block btn_dk" name="btnDangKy">Tạo tài khoản</button>
+                                    </div>
+                                    <div class="footer p-4">
+                                        <div class="row">
+                                            <div class="col-12 ">
+                                                <p >Nếu bạn đã có Tài khoản, xin mời Đăng nhập</p>
+                                                <a class="btn btn_dn form-control" href="../html/dangnhap.html">Đăng nhập</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- search -->
+        </div>
+
+
+    </div>
+    <script src="../asset/js/main.js"></script>
+</body>
+</html>

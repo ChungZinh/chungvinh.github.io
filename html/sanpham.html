@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="../asset/css/sanpham.css">
     <link rel="stylesheet" href="../asset/icon/fontawesome-free-6.0.0-web/css/all.min.css">
     <title>ClickClick | Điện Thoại | HCM</title>
     <script src = "https://code.iconify.design/2/2.1.2/iconify.min.js"> </script>
+    <script src="../asset/js/bootstrap.min.js"></script>
+    <script src="../asset/js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -15,20 +18,15 @@
         <!-------------------------HEADER----------------------------- -->
         <div class="header">
             <div class="header___content">
-                <a href="./trangchu.html"><div class="header__logo">Click<span>Click</span></div></a>
+                <a style="text-decoration: none;" href="./trangchu.html"><div class="header__logo">Click<span>Click</span></div></a>
     
                 <div class="header__nav">
                     <ul class="nav__list">
                        <li><a href="#">HOME</a></li>
                        <li><a href="#store">SHOP</a>
-                            <ul class="subnav">
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                            </ul>
                         </li>
-                       <li><a href="#">NEW</a></li>
-                       <li><a href="#contact">CONTACT</a></li>
+                       <li><a href="#">ABOUT US</a></li>
+                       <li><a href="#contact">SITEMAP</a></li>
                     </ul>
                 </div>
 
@@ -37,7 +35,7 @@
                     <input class="search" type="text" placeholder="What do you want ...">
                     <i class="fa-solid fa-magnifying-glass sear"></i>
                     <button  class="account"><a href="./dangnhap.html"  class="account"">MY ACCOUNT</a></button>
-                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart cart-link"></i></a>
                 </div>
     
                 <!-- <div class="header__search">
@@ -49,6 +47,14 @@
         <!-- ----------------------CONTENT--------------------------------- -->
         <div class="content">
 
+            <div class="container product__breadcrump">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../html/trangchu.html">Trang Chủ</a></li>
+                        <li class="breadcrumb-item" aria-current="page"><a href="../html/sanpham.html">Sản phẩm</a></li>
+                    </ol>
+                </nav>
+            </div>
             <div class="content__box">
                 <div class="box_header">
                     <h2>Apple iPhone 13 Pro Max 256GB Chính hãng VN/A</h2>
@@ -62,8 +68,121 @@
 
 
                 <div class="box_content">
-                    
+                    <div class="content_img">
+                        <img src="../asset/img/ip.jpg" alt="">
+                        <div class="box">
+                            <h4>Tình trạng máy</h4>
+                            <p>Máy mới nguyên seal Fullbox chính hãng VN/A, chưa Active. Bảo hành 12 tháng tại trung tâm bảo hành ủy quyền chính hãng.</p>
+                        </div>
+                    </div>
+
+                    <div class="content_price">
+                        <div class="price">
+                            <p>31,790,000Đ</p>
+                            <p>Trả góp từ 6.358.000₫ / 1 tháng</p>
+                        </div>
+
+                        <p>Màu sắc</p>
+                        <div class="color">
+                            <div class="cl">
+                                <img src="../asset/img/ip5.jpg" alt="">
+                                Black
+                                31,790,000Đ
+                            </div>
+                            <div class="cl">
+                                <img src="../asset/img/ip5.jpg" alt="">
+                                Blue
+                                31,790,000Đ
+                            </div>
+                            <div class="cl">
+                                <img src="../asset/img/ip5.jpg" alt="">
+                                Gold
+                                31,790,000Đ
+                            </div>
+                            <div class="cl">
+                                <img src="../asset/img/ip5.jpg" alt="">
+                                Silver
+                                31,790,000Đ
+                            </div>
+                            <div class="cl">
+                                <img src="../asset/img/ip5.jpg" alt="">
+                                Green
+                                31,790,000Đ
+                            </div>
+                            
+                        </div>
+
+                        <div class="version">
+                            <div class="vs">
+                                128GB
+                                31,790,000Đ
+                            </div>
+                            <div class="vs">
+                                256GB
+                                31,790,000Đ
+                            </div>
+                            <div class="vs">
+                                512GB
+                                31,790,000Đ
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="discount">
+                            <h4>Khuyến Mãi</h4>
+                            <p> 
+                                Đăng ký khuyến mãi - Giảm thêm 100.000đ <br>
+                                ĐỘC QUYỀN CLICKBUY: Tặng gói Bảo hành RƠI VỠ, VÀO NƯỚC 12 THÁNG  trị giá 3.000.000đ <br>
+                                Thu cũ đổi mới - Trợ giá 1.500.000đ<br>
+                                Tặng Phiếu mua hàng 600.000đ ( áp dụng khi mua Ốp lưng chính hãng)<br>
+                                Giảm 100.000đ khi mua kèm Apple Watch<br>
+                                Giảm 100.000đ khi mua kèm tai nghe Air Pods<br>
+                                Tặng Voucher giảm 200.000đ khi mua Laptop<br>
+                                Giảm giá 5% khi mua phụ kiện
+                            </p>
+                            <button class="btn-top">
+                                Mua Ngay <br>
+                                (Nhận tại của hàng hoặc giao tận nhà)
+                            </button>
+                            <div class="btn-bottom">
+                                <button>
+                                    Trả Góp 0%<br>
+                                    (Xét Duyệt Online)
+                                </button>
+                                <button>
+                                    Trả Góp Qua Thẻ<br>
+                                    (Visa, MasterCard, JBL)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="content_info">
+                        <div class="address">
+                            <h4>Hệ Thống cửa Hàng</h4>
+                            111 Trần Đăng Ninh, Hà Nội 09.7673.2468 <br>
+                            446 Xã Đàn, Hà Nội 096.111.2468<br>
+                            118 Thái hà, Hà Nội 096.424.2468<br>
+                            312 Nguyễn Trãi, Trung Văn, Nam Từ <br> Liêm, Hà Nội – Gần chợ Phùng Khoang <br> 094.698.2468<br>
+                            380 Trần Phú, TP.Thanh Hóa 096914.2468<br>
+                            107 Nguyễn Hữu Tiến – TT Đồng Văn – Duy Tiên – Hà Nam 0357.209.209<br>
+                            82 Lạch Tray, Hải Phòng 0949.16.2468<br>
+                            Ngã 3 Đông Yên, Yên Phong, Bắc Ninh 094144.2468<br>
+                            Chung cư HillView, Khu Thái Bảo, Nam Sơn, TP. Bắc Ninh 091.154.2468
+                        </div>
+
+                        <div class="ds">
+                            <h4>Ưu Đãi Trả Góp</h4>
+                            Hỗ trợ trả góp các ngân hàng trả góp HD SaiSon, MB MCredit, Fe Credit<br>
+Chỉ cần bằng lái xe & chứng minh thư<br>
+Trả trước 20% nhận máy sau 15 phút
+                        </div>
+                    </div>
                 </div>
+
+
             </div>
 
 
@@ -105,21 +224,22 @@
                     </ul>
                 </div>
     
-                <div class="footer__send">
+                <form method="post" action="" class="footer__send">
+
                     <h2 class="footer__titile">PHẢN HỒI</h2>
     
-                    <div class="send-mail">
-                        <label class="lable" for="Mail">Mail</label>
-                        <input class="input" type="text" placeholder="Your email address">
+                    
+                    <div class="form-group send-mail">
+                        <label for="email">Email của bạn</label>
+                        <input type="email" class="form-control" id="email" name="email"
+                            placeholder="Email của bạn">
                     </div>
-    
-                    <div class="send-mes">
-                        <label class="lable" for="Mail">Messager</label>
-                        <input class="input" type="text" placeholder="Messager">
+                    <div class="send-mes form-group">
+                        <label for="message">Lời nhắn của bạn</label>
+                        <input type="text" class="form-control" id="title" name="title" placeholder="Lời nhắn của bạn">
                     </div>
-
-                    <button>SEND</button>
-                </div>
+                    <button class="btn">SEND</button>
+                </form>
             </div>
 
 

@@ -24,24 +24,30 @@
   height: 80px;
   background-color: var(--color--one);
   display: flex;
-  align-items: center;
-  /* position: fixed;
+  position: fixed;
+  top: 0;
   z-index: 1;
-  top: -10px; */
+  box-shadow: 0px 2px 4px 1px #3333;
+
 }
 body{
-  background-color: #f5fcf7;
+  background-color: #ecfff0;
 }
-a{
+
+span{
   text-decoration: none;
 }
 
 .header___content {
-  width: 1089px;
+  width: 1200px;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+}
+
+.header___content > a{
+  text-decoration: none;
 }
 
 .subnav {
@@ -88,6 +94,7 @@ a{
 
 .header__search{
   display: flex;
+  position: relative;
 }
 
 .header__search .search {
@@ -105,11 +112,7 @@ a{
   cursor: pointer;
 }
 
-.header__search .sear{
-  position: absolute;
-  left: 1295px;
 
-}
 
 .header__search .account {
   padding: 12px 10px;
@@ -135,9 +138,23 @@ a{
   line-height: 50px;
   color: var(--color--two);
   margin-left: 10px;
-
+  transition: 0.4s;
 
 }
+
+.search__btn{
+  position: absolute;
+    top: 7px;
+    font-size: 25px;
+    left: 259px;
+    color: var(--color--two);
+}
+
+
+.header__search .cart:hover{
+  opacity: 0.8;
+}
+
 /* .header__search a {
   position: absolute;
   top: 5px;
@@ -149,12 +166,12 @@ a{
 /* <!-------------------------HEADER__2nd----------------------------- --> */
 
 .header-2nd {
-  width: 1089px;
+  width: 1200px;
   height: 50px;
   margin: auto;
   background-color: var(--color--two);
   border-radius: 5px;
-  margin-top: 10px;
+  margin-top:90px;
 }
 
 .header__list--2nd {
@@ -185,7 +202,7 @@ a{
 
 .content_ads {
   margin: auto;
-  width: 1089px;
+  width: 1200px;
   margin-top: 10px;
   border-radius: 5px 5px 0px 0px;
 }
@@ -242,9 +259,10 @@ a{
 .content__title {
   position: absolute;
   top: 5px;
-  right: 230px;
+  right: 260px;
   font-weight: 700;
   color: var(--color--one);
+  text-align: center;
 }
 
 .ads {
@@ -258,8 +276,8 @@ a{
 
 .content__store {
   margin: auto;
-  width: 1089px;
-  height: 97vh;
+  width: 1200px;
+  height: 100vh;
   background-color: var(--color--one);
   margin-top: 10px;
   border-radius: 10px 10px 0 0;
@@ -267,13 +285,14 @@ a{
 
 .store__price {
   display: flex;
-  width: 1078px;
+  width: 1190px;
   height: 50px;
   background-color: var(--color--two);
   border-radius: 10px;
   margin-left: 5px;
   justify-content: space-between;
   align-items: center;
+  margin-top: 70px;
 }
 
 .store__price-selective {
@@ -351,6 +370,7 @@ a{
   align-items: center;
   max-height: 300px;
   transition: transform  .2s;
+  position: relative;
 }
 .product__box:hover{
   transform: scale(1.04);
@@ -384,6 +404,23 @@ a{
   display: flex;
   justify-content: space-around;
   margin: 10px 0px;
+}
+
+.product__box-ct{
+  position: absolute;
+  background-color: white;
+  padding: 4px 71.5px;
+  border-radius: 0px 0px 15px 15px;
+  top:253px ;
+  display: none;
+  color: var(--color--four);
+  transform: .4s;
+}
+
+.product__box:hover .product__box-ct{
+  display: block;
+  color: var(--color--four);
+  text-decoration: none;
 }
 
 .box-price__memory {
@@ -433,6 +470,7 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
 }
 
 .btn__next {
@@ -446,6 +484,7 @@ a{
   font-weight: bold;
   font-size: 25px;
   transition: 0.4s;
+  cursor: pointer;
 }
 
 .btn__next:hover {
@@ -501,12 +540,13 @@ a{
   margin-top: 20px;
 }
 .input {
-  padding: 40px;
+  padding: 20px;
   border-radius: 10px;
   border: 2px solid var(--color--four);
   padding-right: 80px;
   background-color: var(--color--one);
   z-index: 1;
+  margin-top: 20px;
 }
 
 .send-mes {
@@ -539,7 +579,6 @@ a{
 }
 
 .contact__icon {
-  margin-top: 40px;
   background-color: var(--color--three);
   height: 100px;
   display: flex;
